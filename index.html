@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funciones</title>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container-app">
+      <!--header de la pagina  -->
+      <header class="container-fluid bg-dark">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Narvaez Ruiz Alexis</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href=""
+                    >Recargar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container-fluid">
+        <div class="container">
+          <p class="col-12 my-5 px-3">
+            Investiga un ejemplo de una función que pueda resolver dos tipos de
+            ecuaciones que son de primer grado y de segundo grado; e
+            implementala en el lenguaje de tu preferencia.
+          </p>
+          <ul class="list-group mb-5">
+            <li class="list-group-item">
+              <strong>Hora: </strong>5:00pm - 6:00pm
+            </li>
+            <li class="list-group-item">
+              <strong>lenguaje de programación: </strong>Javascript
+            </li>
+            <li class="list-group-item">
+              <strong>Materia: </strong>Progrmación logica y funcional
+            </li>
+            <li class="list-group-item">
+              <strong>Alumno: </strong>Narvaez Ruiz Alexis
+            </li>
+          </ul>
+          <div class="container-form row d-flex justify-content-around">
+            <!--Ecuaciones de prmer grado. -->
+            <form action="" class="col-md-5 col-sm-12 bg-light p-5">
+              <!--Filas e inputs del formulario -->
+              <h3 class="h3 text-center mb-4">Ecuación de primer grado.</h3>
+              <p class="col-12 text-center mb-4">ax + b= 0</p>
+              <div class="row mb-3 d-flex justify-content-end">
+                <div class="col-lg-5 col-sm-12">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="">a</span>
+                    <input
+                      type="number"
+                      class="form-control"
+                      value="0"
+                      id="inputAPriGrado"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="">b</span>
+                    <input
+                      type="number"
+                      class="form-control"
+                      value="0"
+                      id="inputBPriGrado"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 mt-3 d-flex justify-content-end">
+                  <a
+                    heref="#"
+                    class="btn btn-outline-dark"
+                    id="botonPrimerGrado"
+                    >Calcular</a
+                  >
+                </div>
+                <p class="col-12 alert mt-3" id="texto-ecu1">resultado</p>
+              </div>
+            </form>
+            <!--Ecuaciones de segundo grado. -->
+            <form action="" class="col-md-5 col-sm-12 bg-light p-5">
+              <!--Filas e inputs del formulario -->
+              <h3 class="h3 text-center mb-4">Ecuación de segundo grado.</h3>
+              <p class="col-12 text-center mb-4">ax^2 + bx + c = 0</p>
+              <div class="row mb-3 d-flex justify-content-center">
+                <div class="col-lg-4 col-sm-12">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="">a</span>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputAsegGrado"
+                      value="0"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="">b</span>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputBsegGrado"
+                      value="0"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="">c</span>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputCsegGrado"
+                      value="0"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 mt-3 d-flex justify-content-end">
+                  <a
+                    heref="#"
+                    class="btn btn-outline-dark"
+                    id="botonSegundoGrado"
+                    >Calcular</a
+                  >
+                </div>
+                <p class="col-12 alert mt-3" id="texto-ecu2">resultado</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="container-fluid bg-dark"></footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const botonPrimerGrado = document.getElementById("botonPrimerGrado");
+      const botonSegundoGrado = document.getElementById("botonSegundoGrado");
+
+      const calcX1 = (a, b) => {
+        m =
+          a != 0
+            ? -b / a
+            : b != 0
+            ? "Solucion imposible"
+            : "Solucion indeterminada";
+        return m;
+      };
+
+      const getX12 = (a, b, c) => {
+        let x = [0, 0];
+        let casita = b * b - 4 * a * c;
+        if (casita < 0) {
+          return "Solucion imposible/Imaginaria";
+        }
+        x[0] = (-b + Math.sqrt(casita)) / (2 * a);
+        x[1] = (-b - Math.sqrt(casita)) / (2 * a);
+        return x;
+      };
+
+      botonPrimerGrado.addEventListener("click", (e) => {
+        let a = document.getElementById("inputAPriGrado").value;
+        let b = document.getElementById("inputBPriGrado").value;
+        let m = calcX1(a, b);
+        let texto = document.getElementById("texto-ecu1");
+        if (typeof m === "number") {
+          texto.innerHTML = "Resultado = " + m;
+          texto.classList.add("alert-success");
+          texto.classList.remove("alert-danger");
+          //alert(m)
+        } else {
+          texto.innerHTML = "" + m;
+          texto.classList.add("alert-danger");
+          texto.classList.remove("alert-success");
+        }
+      });
+
+      botonSegundoGrado.addEventListener("click", (e) => {
+        let a = document.getElementById("inputAsegGrado").value;
+        let b = document.getElementById("inputBsegGrado").value;
+        let c = document.getElementById("inputCsegGrado").value;
+        let temp = getX12(a, b, c);
+        console.log(typeof temp);
+
+        let texto = document.getElementById("texto-ecu2");
+        if (typeof temp === "object") {
+          texto.innerHTML = "Resultado = " + temp;
+          texto.classList.add("alert-success");
+          texto.classList.remove("alert-danger");
+          //alert(m)
+        } else {
+          texto.innerHTML = "" + temp;
+          texto.classList.add("alert-danger");
+          texto.classList.remove("alert-success");
+        }
+      });
+    </script>
+  </body>
+</html>
